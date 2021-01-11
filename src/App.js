@@ -4,6 +4,12 @@ import user from './components/profiles/user.json';
 import Statistics from './components/Statistics/Statistics';
 import statisticalData from './components/Statistics/statistical-data.json';
 
+import FriendList from './components/FriendList/FriendList';
+import friends from './components/FriendList/friends.json';
+
+import Transactions from './components/Transactions/Transactions.jsx';
+import transactions from './components/Transactions/transactions.json';
+
 function App() {
   return (
     <div>
@@ -19,6 +25,10 @@ function App() {
         <h1>Statistics</h1>
         <Statistics statistics={statisticalData} />
       </div>
+      <div>
+        <FriendList friends={friends} />
+      </div>
+      <Transactions items={transactions} />
     </div>
   );
 }
