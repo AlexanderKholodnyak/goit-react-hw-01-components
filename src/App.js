@@ -26,8 +26,10 @@ function App() {
         <Statistics statistics={statisticalData} />
       </div>
       <div>
+        <h1>Friend List</h1>
         <FriendList friends={friends} />
       </div>
+      <h1>Transactions</h1>
       <Transactions items={transactions} />
     </div>
   );

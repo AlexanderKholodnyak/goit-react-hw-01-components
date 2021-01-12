@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 const Statistics = ({ title, statistics }) => (
   <section className={s.statistics}>
-    {title && <h2 className={s.title}>{title}</h2>}
+    {title && <h2 className={s.title}>Upload stats</h2>}
 
-    <ul className={s.list}>
+    <ul className={s.stat}>
       {statistics.map(({ id, label, percentage = 0 }) => (
         <li className={s.item} key={id}>
           <span className={s.label}>{label}</span>

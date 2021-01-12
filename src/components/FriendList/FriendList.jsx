@@ -6,7 +6,7 @@ const FriendList = ({ friends }) => (
   <ul>
     {friends.map(({ id, avatar, name, isOnline }) => (
       <li className={s.item} key={id}>
-        <span className={isOnline ? s.isOnline : s.isOffline}>{isOnline}</span>
+        <span className={isOnline ? s.online : s.offline}>{isOnline}</span>
         <img className={s.avatar} src={avatar} alt="" width="48" />
         <span className={s.name}>{name}</span>
       </li>
@@ -15,7 +15,6 @@ const FriendList = ({ friends }) => (
 );
 
 FriendList.defaultProps = {
-  //avatar: defaultImage
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       avatar: defaultImage,
